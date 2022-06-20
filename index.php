@@ -1,5 +1,5 @@
 <?php
-/*
+
 declare(strict_types=1);
 
 
@@ -71,7 +71,7 @@ for ($letter = 'a'; $letter <= 'z'; $letter++) {
 print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alfabetical array
 
 
-//new_exercise(6);
+new_exercise(6);
 // === Final exercise ===
 // The fixed code should echo the following at the bottom:
 // Here is the name: $name - $name2
@@ -113,8 +113,8 @@ function randomHeroName()
 
 echo "Here is the name: " . combineNames();
 
-//new_exercise(7);
-function copyright(int $year): string{
+new_exercise(7);
+function copyright($year){
     return "&copy; $year BeCode";
 }
 //print the copyright
@@ -163,7 +163,7 @@ isLinkValid('https://google.com');
 isLinkValid('http://google.com');
 //VALID link
 isLinkValid('http://google.com/test.txt');
-*/
+
 
 //new_exercise(10);
 
