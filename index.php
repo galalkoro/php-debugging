@@ -172,11 +172,23 @@ isLinkValid('http://google.com/test.txt');
 $areTheseFruits = ['apple', 'bear', 'beef', 'banana', 'cherry', 'tomato', 'car'];
 $validFruits = ['apple', 'pear', 'banana', 'cherry', 'tomato'];
 //from here on you can change the code
+$finalArray=array();
+for($i=0;$i<count($areTheseFruits);$i++){
+    if(in_array($areTheseFruits[$i],$validFruits)){
+        $finalArray[]=$areTheseFruits[$i];
+    }
+}
+
+print_r($finalArray);
+
+
+/*
 for ($i = 0; $i <= count($areTheseFruits); $i++) {
     if (!in_array($areTheseFruits[$i], $validFruits)) {
         unset($areTheseFruits[$i]);
     }
 }
+print_r($areTheseFruits);*/
 var_dump($areTheseFruits);//do not change this
 
 
